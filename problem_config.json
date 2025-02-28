@@ -3,11 +3,14 @@
     "default_params": {
       "instance_file": "instances/instance_5_3_15_Random_Central_0.txt"
     },
-    "problem_type": "Order Picking Problem",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Order picking problem",
     "description": "In the order picking problem, a warehouse has a set of orders (or products) to be picked, starting and ending at a depot (order 0). The distances between every pair of orders are provided in a distance matrix. The objective is to find a picking order (a permutation of orders) that minimizes the total travel distance, including the return trip to the depot.",
+    "link_to_dataset": "https://github.com/Rastion/order_picking_problem/blob/main/instances/Instance_5_3_15_Random_Central_0.txt",
     "keywords": [
       "order picking",
-      "scheduling",
+      "production-scheduling",
       "warehouse"
     ],
     "data_format": {
@@ -27,11 +30,8 @@
       "description": "Minimize the total travel distance required to visit all orders and return to the depot. The total distance is the sum of the distances between successive orders in the picking order plus the distance from the last order back to the depot."
     },
     "solution_representation": "A list of integers representing the picking order (a permutation of order indices, with 0 as the depot).",
-    "compatible_optimizers": [
-      "genetic_algorithm",
-      "simulated_annealing",
-      "particle_swarm",
-      "tabu_search"
+    "formulations": [
+      ""
     ]
   }
   
